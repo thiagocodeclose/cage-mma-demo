@@ -1,0 +1,25 @@
+:root {
+  --orange:  #FF3D00;
+  --dark:    #1A0A00;
+  --bg:      #080808;
+  --surface: #121212;
+  --text:    #F5F5F5;
+  --muted:   #666666;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); }
+
+/* Reveal animations */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* Video hero overlay */
+.video-slash::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, rgba(8,8,8,0.95) 0%, rgba(8,8,8,0.7) 50%, rgba(8,8,8,0.3) 100%);
+  pointer-events: none;
+}
