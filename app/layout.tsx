@@ -4,6 +4,7 @@ import { Oswald } from 'next/font/google';
 import { getKorivaConfig, buildCssVars } from '@/lib/koriva-config';
 import './globals.css';
 
+import { KorivaLivePreview } from '@/components/KorivaLivePreview';
 const heading = Oswald({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-heading' });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -22,6 +23,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     <html lang="en" style={vars as React.CSSProperties}>
       <body className={`${heading.variable} bg-cm-bg text-cm-text antialiased`} style={{ fontFamily: 'Oswald, sans-serif' }}>
         {children}
+        <KorivaLivePreview />
       </body>
     </html>
   );
