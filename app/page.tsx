@@ -96,7 +96,7 @@ function Hero() {
             <span className="text-cm-orange font-heading font-bold text-sm uppercase tracking-[0.25em]">MMA · Las Vegas, NV</span>
           </div>
 
-          <h1 className="font-heading font-bold text-7xl sm:text-8xl lg:text-[100px] text-white leading-none mb-4 uppercase">
+          <h1 data-cg-el="hero_headline_1" className="font-heading font-bold text-7xl sm:text-8xl lg:text-[100px] text-white leading-none mb-4 uppercase">
             TRAIN<br />
             LIKE A<br />
             <span className="text-cm-orange">CHAMPION.</span>
