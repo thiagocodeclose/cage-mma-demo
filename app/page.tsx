@@ -93,7 +93,7 @@ function Hero() {
         <div className="max-w-3xl">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-1 w-12 bg-cm-orange" />
-            <span className="text-cm-orange font-heading font-bold text-sm uppercase tracking-[0.25em]">MMA · Las Vegas, NV</span>
+            <span data-cg-el="hero_eyebrow" className="text-cm-orange font-heading font-bold text-sm uppercase tracking-[0.25em]">MMA · Las Vegas, NV</span>
           </div>
 
           <h1 data-cg-el="hero_headline_1" className="font-heading font-bold text-7xl sm:text-8xl lg:text-[100px] text-white leading-none mb-4 uppercase">
@@ -102,13 +102,13 @@ function Hero() {
             <span className="text-cm-orange">CHAMPION.</span>
           </h1>
 
-          <p className="text-cm-muted text-xl mb-10 max-w-xl leading-relaxed">{studioInfo.subheadline}</p>
+          <p data-cg-el="hero_subtitle" className="text-cm-muted text-xl mb-10 max-w-xl leading-relaxed">{studioInfo.subheadline}</p>
 
           <div className="flex flex-wrap gap-4">
-            <a href="#contact" className="inline-flex items-center gap-2 bg-cm-orange hover:bg-[#CC2D00] text-white font-heading font-bold text-base uppercase tracking-widest px-10 py-4 transition-colors">
+            <a data-cg-el="hero_cta_primary" href="#contact" className="inline-flex items-center gap-2 bg-cm-orange hover:bg-[#CC2D00] text-white font-heading font-bold text-base uppercase tracking-widest px-10 py-4 transition-colors">
               Start Free Trial <ArrowRight size={16} />
             </a>
-            <a href="#disciplines" className="inline-flex items-center gap-2 border-2 border-[#2A2A2A] hover:border-cm-orange text-white font-heading font-bold text-base uppercase tracking-widest px-10 py-4 transition-colors">
+            <a data-cg-el="hero_cta_secondary" href="#disciplines" className="inline-flex items-center gap-2 border-2 border-[#2A2A2A] hover:border-cm-orange text-white font-heading font-bold text-base uppercase tracking-widest px-10 py-4 transition-colors">
               Our Disciplines
             </a>
           </div>
